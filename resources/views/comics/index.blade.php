@@ -20,7 +20,7 @@
                 </p>
             </li>
             <li>
-                <img src="{{$comic->thumb}}}" alt="{{$comic->title}}">
+                <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
             </li>
             <li>
                 <strong>Price: </strong><span> {{$comic->price}} </span>
