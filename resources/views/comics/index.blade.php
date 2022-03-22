@@ -28,7 +28,7 @@
             <li><strong>Series: </strong><span> {{$comic->series}} </span></li>
             <li><strong>Sale_date: </strong><span> {{$comic->sale_date}} </span></li>
             <li><strong>Type: </strong><span> {{$comic->type}} </span></li>
-            <li><a href="" class="btn btn-primary">Scopri di più</a></li>
+            <li class="py-3"><a href="{{route('comics.show',$comic->id)}}" class="btn btn-primary">Scopri di più</a></li>
         @empty
             <h3>Non risultano fumetti</h3>
         @endforelse
