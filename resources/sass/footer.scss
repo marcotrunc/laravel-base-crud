@@ -1,0 +1,64 @@
+// Top Footer
+#top-footer{
+    background-color: $blue;
+    figure{
+        width: 40px;    
+    }
+    h6{
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+// Main Footer
+#main-footer{
+    background-image: url('../images/footer-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    #left-footer{
+        ul{
+            padding: 0;
+            list-style-type: none;
+            li{
+                text-decoration: none;   
+                cursor: pointer;
+                color: grey;     
+                font-size: 0.8rem;
+                margin-bottom: 0.15rem;
+            }
+        }
+        span{
+            font-size: 0.8rem;
+            color: grey;     
+        }
+    }
+    #right-footer{
+        position: relative;
+        figure{
+            position:absolute;
+            top: 0;
+            right: 0;
+            transform: translateY(-10%);
+        }
+    }
+}
+
+// Bottom Footer
+#bottom-footer{
+    background-color: $grey;
+    position: relative;
+    z-index: 1;
+    .sign-btn a{
+        text-decoration: none;
+        padding: 15px 20px;
+        border: 2px solid $blue;
+    }
+    .follow{
+        a{
+            color: $blue;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    }
+}

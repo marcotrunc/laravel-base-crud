@@ -11243,3 +11243,202 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.pr-100px {
+  padding-right: 100px;
+}
+
+.pl-100px {
+  padding-left: 100px;
+}
+
+header #top-header {
+  background-color: #0282F9;
+}
+header #top-header a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+header #main-header {
+  border-bottom: 1px solid lightgray;
+}
+header #main-header nav ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+header #main-header nav ul li {
+  padding: 40px 0px;
+}
+header #main-header nav ul li:hover a {
+  border-bottom: 4px solid #0282F9;
+}
+header #main-header nav ul li a {
+  padding: 40px 0px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header #main-header input[type=text] {
+  border: none;
+  border-bottom: 2px solid #0282F9;
+}
+
+.jumbo {
+  height: 500px;
+  background-image: url("../images/jumbotron.jpg");
+  background-position: center;
+  background-position-y: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main.comics {
+  background-color: #000;
+  color: #fff;
+}
+main.comics .container {
+  position: relative;
+}
+main.comics .title-curr-ser {
+  background-color: #0282F9;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+main.comics .title-curr-ser a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+main.comics .row a {
+  text-decoration: none;
+}
+main.comics .row a h6, main.comics .row a .h6 {
+  text-decoration: none;
+  color: white;
+}
+main.comics .row a .card {
+  border: 1px solid #000;
+}
+main.comics .row a .card-body {
+  background-color: #000;
+}
+
+main.comic .left-section {
+  padding-left: 100px;
+}
+main.comic .left-section h2, main.comic .left-section .h2 {
+  color: #0282F9;
+}
+main.comic .left-section .price {
+  width: 70%;
+  border: 1px solid #4daa51;
+  background-color: #55ba59;
+  padding: 8px 10px;
+  color: #fff;
+}
+main.comic .left-section .available {
+  width: 30%;
+  border: 1px solid #4daa51;
+  background-color: #55ba59;
+  padding: 8px 10px;
+}
+main.comic .left-section .available select {
+  width: 100%;
+  color: #fff;
+  background-color: #55ba59;
+  border: 1px solid #55ba59;
+}
+main.comic .left-section .available select:focus-visible {
+  outline: none;
+}
+main.comic .right-section {
+  padding-right: 100px;
+}
+main.comic .bottom-section {
+  background-color: #f6f6f6;
+}
+main.comic .bottom-section h4, main.comic .bottom-section .h4 {
+  color: #013f7e;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+main.comic .bottom-section table {
+  width: 100%;
+}
+main.comic .bottom-section table tr {
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+main.comic .bottom-section table tr td {
+  color: #58b5dd;
+  font-size: 0.7rem;
+}
+main.comic .bottom-section table tr td h6, main.comic .bottom-section table tr td .h6 {
+  margin-right: 100px;
+  color: #013f7e;
+  font-size: 0.8rem;
+}
+
+#top-footer {
+  background-color: #0282F9;
+}
+#top-footer figure {
+  width: 40px;
+}
+#top-footer h6, #top-footer .h6 {
+  cursor: pointer;
+  color: #fff;
+}
+
+#main-footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#main-footer #left-footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+#main-footer #left-footer ul li {
+  text-decoration: none;
+  cursor: pointer;
+  color: grey;
+  font-size: 0.8rem;
+  margin-bottom: 0.15rem;
+}
+#main-footer #left-footer span {
+  font-size: 0.8rem;
+  color: grey;
+}
+#main-footer #right-footer {
+  position: relative;
+}
+#main-footer #right-footer figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-10%);
+}
+
+#bottom-footer {
+  background-color: #303030;
+  position: relative;
+  z-index: 1;
+}
+#bottom-footer .sign-btn a {
+  text-decoration: none;
+  padding: 15px 20px;
+  border: 2px solid #0282F9;
+}
+#bottom-footer .follow a {
+  color: #0282F9;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-decoration: none;
+}

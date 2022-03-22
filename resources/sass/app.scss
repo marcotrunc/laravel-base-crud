@@ -1,5 +1,25 @@
-//bootstrap
-@import "~bootstrap/scss/bootstrap";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
 
-//generics
-@import "generics"
+// Variables
+@import 'variables';
+
+// Generics
+@import 'generics';
+
+// Utilities
+@import 'utilities';
+
+// Header
+@import 'header';
+
+// Jumbotron
+@import 'jumbo';
+
+// Comics Main
+@import 'comics_main';
+// Comic
+@import 'comic';
+
+// Footer
+@import 'footer';
