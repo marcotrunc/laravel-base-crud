@@ -15,12 +15,11 @@ header{
             margin-bottom: 0;
             padding: 0;
             li{
-                padding: 40px 0px; 
                 &:hover a{
                     border-bottom: 4px solid $blue;
                 }
                 a{
-                    padding: 40px 0px; 
+                    padding: 40px 20px; 
                     color: #000000;
                     text-transform: uppercase;
                     text-decoration: none;

@@ -11251,6 +11251,10 @@ textarea.form-control-lg {
   padding-left: 100px;
 }
 
+.text-none {
+  text-decoration: none;
+}
+
 header #top-header {
   background-color: #0282F9;
 }
@@ -11268,14 +11272,11 @@ header #main-header nav ul {
   margin-bottom: 0;
   padding: 0;
 }
-header #main-header nav ul li {
-  padding: 40px 0px;
-}
 header #main-header nav ul li:hover a {
   border-bottom: 4px solid #0282F9;
 }
 header #main-header nav ul li a {
-  padding: 40px 0px;
+  padding: 40px 20px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
