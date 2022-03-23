@@ -18,17 +18,28 @@ main.comics{
             text-decoration: none;
         }
     }
-    .row a{
-        text-decoration: none;
-        h6{
-            text-decoration: none;
-            color: white;
+    .row{
+        .col-2{
+            position: relative;
+            a{
+                text-decoration: none;
+                .card{
+                    border: 1px solid #000;
+                    h6{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    .card-body{
+                        background-color: #000;
+                    }
+                }
+            }
+            .edit{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
-        .card{
-            border: 1px solid #000;
-        }
-        .card-body{
-            background-color: #000;
-        }
+        
     }
 }

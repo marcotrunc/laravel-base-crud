@@ -11316,18 +11316,26 @@ main.comics .title-curr-ser a {
   color: #fff;
   text-decoration: none;
 }
-main.comics .row a {
+main.comics .row .col-2 {
+  position: relative;
+}
+main.comics .row .col-2 a {
   text-decoration: none;
 }
-main.comics .row a h6, main.comics .row a .h6 {
+main.comics .row .col-2 a .card {
+  border: 1px solid #000;
+}
+main.comics .row .col-2 a .card h6, main.comics .row .col-2 a .card .h6 {
   text-decoration: none;
   color: white;
 }
-main.comics .row a .card {
-  border: 1px solid #000;
-}
-main.comics .row a .card-body {
+main.comics .row .col-2 a .card .card-body {
   background-color: #000;
+}
+main.comics .row .col-2 .edit {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 main.comic .left-section {
