@@ -30,7 +30,7 @@
                     </div>
                     <div class="edit-delete d-flex">
                         <a href="{{route('comics.edit',$comic->id)}}" class="btn btn-sm btn-warning text-white me-1">Edit</a>
-                        <form action="{{route('comics.destroy',$comic->id)}}" method="POST">
+                        <form action="{{route('comics.destroy',$comic->id)}}" method="POST" class="delete-form">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-sm btn-danger text-white">Delete</button>
@@ -46,4 +46,18 @@
         </div>
     </div>
 </main>
+@endsection
+
+
+@section('additional-script')
+<script>
+ const deleteForms= document.querySelectorAll('.delete-form');  
+ deleteForms.forEach(form => {
+     form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const conf = confirm('Sei sicuro di voler cancellare?');
+        if(conf) e.target.submit(); 
+     });
+ });
+</script>
 @endsection
