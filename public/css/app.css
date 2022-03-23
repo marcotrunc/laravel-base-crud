@@ -11332,7 +11332,7 @@ main.comics .row .col-2 a .card h6, main.comics .row .col-2 a .card .h6 {
 main.comics .row .col-2 a .card .card-body {
   background-color: #000;
 }
-main.comics .row .col-2 .edit {
+main.comics .row .col-2 .edit-delete {
   position: absolute;
   top: 0;
   left: 0;
