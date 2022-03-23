@@ -7,6 +7,11 @@
 
 @section('content-main')
 <main class="comics">
+    @if(session('message'))
+        <div class="alert alert-danger" role="alert">
+        {{session('message')}}
+        </div>
+    @endif
      <div class="container py-5">
         {{-- Titolo --}}
         <div class="title-curr-ser">
@@ -23,8 +28,14 @@
                           <h6 class="card-title text-uppercase">{{$comic->series}}</h6>
                         </div>
                     </div>
-                    <div class="edit">
-                        <a href="{{route('comics.edit',$comic->id)}}" class="btn btn-sm btn-warning text-white">Edit</a>
+                    <div class="edit-delete d-flex">
+                        <a href="{{route('comics.edit',$comic->id)}}" class="btn btn-sm btn-warning text-white me-1">Edit</a>
+                        <form action="{{route('comics.destroy',$comic->id)}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-sm btn-danger text-white">Delete</button>
+                        </form>
+                        {{-- <a href="{{route('comics.destroy',$comic->id)}}" class="btn btn-sm btn-danger text-white">Delete</a> --}}
                     </div>
                 </a>
             </div>
