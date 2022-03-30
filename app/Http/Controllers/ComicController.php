@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Moldels\Comic;
 use Illuminate\Http\Request;
 use Illuminate\Support\Composer;
+use \Illuminate\Validation\Rule;
+
 
 class ComicController extends Controller
 {
@@ -35,8 +37,16 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Comic $comic)
     {
+        $request->validate([
+            'title' => 'required|string|unique:comics|max:100',
+            'series' => 'string',
+            'type' => 'required|string',
+            'price' => 'numeric|',
+            'sale_date' => 'date',
+        ]);
+
         $data = $request->all();
         $comic = new Comic();
         $comic->fill($data);
@@ -75,6 +85,14 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        $request->validate([
+            'title' => ['required', 'string', Rule::unique('comics')->ignore($comic->id), 'max:100'],
+            'series' => 'string',
+            'type' => 'required|string',
+            'price' => 'numeric|',
+            'sale_date' => 'date',
+        ]);
+
         $data = $request->all();
         $comic->update($data);
         return redirect()->route('comics.show', $comic->id);

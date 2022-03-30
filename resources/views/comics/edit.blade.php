@@ -4,6 +4,8 @@
 
 @section('content-main')
 <main class="p-5">
+    {{-- Errors --}}
+    @include('includes.errors')
     <form action="{{route('comics.update',$comic->id)}}" method="POST">
         @method('PUT')
         @csrf

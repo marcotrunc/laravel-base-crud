@@ -2,6 +2,9 @@
 @section('content-main')
 <div class="container py-5">
 <h2>Add a new comic</h2>
+{{-- Errors --}}
+@include('includes.errors')
+{{-- Form --}}
 <form action="{{route('comics.store')}}" method="POST">
     @csrf
     <div class="row">
